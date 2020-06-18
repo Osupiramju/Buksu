@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prueba3"
+    tools:context=".searchBookActivity">
+
+    <TextView
+        android:id="@+id/labelBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Título"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textBookTitle"
+        app:layout_constraintEnd_toEndOf="@+id/goToMessagesButton" />
+
+    <TextView
+        android:id="@+id/labelnumberPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Páginas"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPagesList"
+        app:layout_constraintEnd_toEndOf="@+id/labelGenre" />
+
+    <TextView
+        android:id="@+id/labelTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Localidad"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textTown"
+        app:layout_constraintEnd_toStartOf="@+id/textTown" />
+
+    <TextView
+        android:id="@+id/labelCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Provincia"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textCity"
+        app:layout_constraintEnd_toEndOf="@+id/labelBookTitle" />
+
+    <TextView
+        android:id="@+id/labelGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Género"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textGenre"
+        app:layout_constraintEnd_toStartOf="@+id/textGenre" />
+
+    <TextView
+        android:id="@+id/labelAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Autor"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textAuthor"
+        app:layout_constraintEnd_toEndOf="@+id/signOutButton" />
+
+    <EditText
+        android:id="@+id/textAuthor"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Autor del libro"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/goToProfileButton" />
+
+    <Button
+        android:id="@+id/goToProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Cerrar sesión"
+        app:layout_constraintEnd_toStartOf="@+id/goToProfileButton"
+        app:layout_constraintStart_toEndOf="@+id/goToMessagesButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goToMessagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Mensajes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textBookTitle"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Título del libro"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelBookTitle"
+        app:layout_constraintTop_toBottomOf="@+id/goToMessagesButton" />
+
+    <EditText
+        android:id="@+id/textCity"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Provincia"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textBookTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textBookTitle" />
+
+    <EditText
+        android:id="@+id/textGenre"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Género"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textCity"
+        app:layout_constraintTop_toBottomOf="@+id/textCity" />
+
+    <EditText
+        android:id="@+id/textTown"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Localidad"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/textAuthor" />
+
+    <Spinner
+        android:id="@+id/numberPagesList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/labelnumberPages"
+        app:layout_constraintTop_toBottomOf="@+id/textGenre" />
+
+    <Button
+        android:id="@+id/searchBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Buscar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberPagesList" />
+
+    <ListView
+        android:id="@+id/listBook"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBookButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

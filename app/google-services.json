@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "256820265741",
+    "firebase_url": "https://buksu-9bc2a.firebaseio.com",
+    "project_id": "buksu-9bc2a",
+    "storage_bucket": "buksu-9bc2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256820265741:android:41f860e5aea11be8ede644",
+        "android_client_info": {
+          "package_name": "buksu.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256820265741-bf5936nkjcmvv7vsbnj9figdj5ug34tu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "buksu.app",
+            "certificate_hash": "324500d1c75767155af4fb473f4d745e9a62cddd"
+          }
+        },
+        {
+          "client_id": "256820265741-qt6fpror3qep2hjf35s9vft0c2obdmeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq2DXxh5hEUSvMb4_4B4N3t8ZdUUEx_14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256820265741-qt6fpror3qep2hjf35s9vft0c2obdmeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

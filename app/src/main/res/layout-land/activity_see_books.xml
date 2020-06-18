@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authorText"
+    android:layout_width="match_parent"
+    android:background="@drawable/prueba4"
+    android:layout_height="match_parent"
+    tools:context=".seeBooksActivity">
+
+    <ListView
+        android:id="@+id/listBook"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBookButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGenre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNumPages"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumPages"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumPages" />
+
+    <Button
+        android:id="@+id/deleteBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Eliminar libro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/listBook"
+        app:layout_constraintStart_toStartOf="@+id/listBook" />
+
+    <TextView
+        android:id="@+id/labelBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Título"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBookTitle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBookTitle" />
+
+    <TextView
+        android:id="@+id/labelAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Autor"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAuthor"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAuthor" />
+
+    <TextView
+        android:id="@+id/labelGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Género"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGenre"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGenre" />
+
+    <TextView
+        android:id="@+id/labelNumPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Páginas"
+        android:textAllCaps="true"
+        android:textColor="#002078"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNumPages"
+        app:layout_constraintEnd_toEndOf="@+id/labelGenre" />
+
+    <Button
+        android:id="@+id/cancelChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textViewGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+    <EditText
+        android:id="@+id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBookTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookTitle" />
+
+    <EditText
+        android:id="@+id/textViewBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textViewNumPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGenre"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGenre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
